@@ -34,7 +34,7 @@ public class SeleniumUtility {
 	 * using this method we can load our property and also open desired browser
 	 */
 	{
-		filePath = System.getProperty("user.dir") + "\\src\\main\\resources\\testData\\testAppData.properties";
+		filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\testData\\testAppData.properties";
 	}
 
 	public WebDriver setUp(String browserName, String appUrl) {
