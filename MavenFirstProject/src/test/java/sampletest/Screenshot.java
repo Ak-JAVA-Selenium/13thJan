@@ -31,7 +31,8 @@ public class Screenshot extends SeleniumUtility {
 	@Test
 	public void testScreenShot2() {
 		setUp("chrome", "https://www.google.com");
-		takeScreenShotOfThePage(".\\src\\test\\resources\\ScreenShots\\GoogleSearchPage2.jpg");
+		String title=driver.getTitle();
+		takeScreenShotOfThePage(".\\src\\test\\resources\\ScreenShots\\"+title+".jpg");
 		cleanUp();
 	}
 }
