@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="615" started-at="2022-05-05T03:53:30Z" finished-at="2022-05-05T03:53:30Z">
+  <suite name="Default suite" duration-ms="708" started-at="2022-05-06T03:23:52Z" finished-at="2022-05-06T03:23:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="615" started-at="2022-05-05T03:53:30Z" finished-at="2022-05-05T03:53:30Z">
+    <test name="Default test" duration-ms="708" started-at="2022-05-06T03:23:52Z" finished-at="2022-05-06T03:23:52Z">
       <class name="ddt.ExcelReading">
-        <test-method status="PASS" signature="getCellCount()[pri:0, instance:ddt.ExcelReading@1f0f1111]" name="getCellCount" duration-ms="602" started-at="2022-05-05T09:23:30Z" finished-at="2022-05-05T09:23:30Z">
+        <test-method status="PASS" signature="updateExcel()[pri:0, instance:ddt.ExcelReading@1f0f1111]" name="updateExcel" duration-ms="694" started-at="2022-05-06T08:53:52Z" finished-at="2022-05-06T08:53:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getCellCount -->
+        </test-method> <!-- updateExcel -->
       </class> <!-- ddt.ExcelReading -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

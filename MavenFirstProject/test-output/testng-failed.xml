@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="ddt.ExcelReading">
+      <class name="ddt.ExcelUpdate">
         <methods>
-          <include name="getSheetCount"/>
+          <include name="loginIntoActitme"/>
         </methods>
-      </class> <!-- ddt.ExcelReading -->
+      </class> <!-- ddt.ExcelUpdate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
