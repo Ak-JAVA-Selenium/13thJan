@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="day11.testngsamples.Example_Annotations3">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="enterAppUrl"/>
+        </methods>
+      </class> <!-- day11.testngsamples.Example_Annotations3 -->
+      <class name="day11.testngsamples.Example_Annotations2">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- day11.testngsamples.Example_Annotations2 -->
+      <class name="day11.testngsamples.Example_Annotations1">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- day11.testngsamples.Example_Annotations1 -->
+      <class name="day11.testngsamples.Example_Param6">
+        <methods>
+          <include name="login"/>
+          <include name="signIn"/>
+          <include name="checkNotification"/>
+        </methods>
+      </class> <!-- day11.testngsamples.Example_Param6 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

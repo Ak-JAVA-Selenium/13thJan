@@ -1,16 +1,13 @@
 package ddt;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Set;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
@@ -120,13 +117,16 @@ public class ExcelReading {
 		//XSSFRow row=sheet.getRow(1);
 				//or
 		 Row row=sheet.getRow(1);	
-		
+		 row.createCell(4).setCellValue("Failed");
 		 //update excel file content
-				
+		
+		 //Identify the location where you want to store your new/update data
 		FileOutputStream fos=new FileOutputStream(".\\src\\test\\resources\\testData\\AppData.xlsx");
-		row.createCell(4).setCellValue("123");
+		//write you content into your excel file
 		workbook.write(fos);
+		//flush the content from stream to excel file
 		fos.flush();
+		//close the stream to save the data
 		fos.close();
 		System.out.println("Updated excel");
 	}

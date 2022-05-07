@@ -45,5 +45,6 @@ public class ExcelUpdate extends SeleniumUtility {
 			Assert.assertEquals(getCurrentTitleOfApplication(), expectedTitle,
 					"Either login was not successfull or title got changed");
 		}
+		cleanUp();
 	}
 }
