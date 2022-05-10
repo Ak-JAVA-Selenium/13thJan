@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="77154" started-at="2022-05-09T18:34:46 IST" finished-at="2022-05-09T18:36:03 IST">
+  <suite name="Default suite" duration-ms="44127" started-at="2022-05-10T08:56:00 IST" finished-at="2022-05-10T08:56:44 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="77154" started-at="2022-05-09T18:34:46 IST" finished-at="2022-05-09T18:36:03 IST">
-      <class name="day24.webpagescripts.LoginLogout">
-        <test-method status="PASS" signature="precondition()[pri:0, instance:day24.webpagescripts.LoginLogout@569cfc36]" name="precondition" is-config="true" duration-ms="68961" started-at="2022-05-09T18:34:46 IST" finished-at="2022-05-09T18:35:55 IST">
+    <test name="Default test" duration-ms="44127" started-at="2022-05-10T08:56:00 IST" finished-at="2022-05-10T08:56:44 IST">
+      <class name="day24.webpagescripts.TestVtigerLogin">
+        <test-method status="PASS" signature="openBrower()[pri:0, instance:day24.webpagescripts.TestVtigerLogin@569cfc36]" name="openBrower" is-config="true" duration-ms="25306" started-at="2022-05-10T08:56:00 IST" finished-at="2022-05-10T08:56:26 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="testLoginFunctionality()[pri:0, instance:day24.webpagescripts.LoginLogout@569cfc36]" name="testLoginFunctionality" duration-ms="6292" started-at="2022-05-09T18:35:55 IST" finished-at="2022-05-09T18:36:02 IST">
+        </test-method> <!-- openBrower -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:day24.webpagescripts.TestVtigerLogin@569cfc36]" name="testLogin" duration-ms="18220" started-at="2022-05-10T08:56:26 IST" finished-at="2022-05-10T08:56:44 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginFunctionality -->
-        <test-method status="PASS" signature="testLogoutFunctionality()[pri:0, instance:day24.webpagescripts.LoginLogout@569cfc36]" name="testLogoutFunctionality" duration-ms="1676" started-at="2022-05-09T18:36:02 IST" finished-at="2022-05-09T18:36:03 IST">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:day24.webpagescripts.TestVtigerLogin@569cfc36]" name="closeBrowser" is-config="true" duration-ms="480" started-at="2022-05-10T08:56:44 IST" finished-at="2022-05-10T08:56:44 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogoutFunctionality -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:day24.webpagescripts.LoginLogout@569cfc36]" name="postCondition" is-config="true" duration-ms="141" started-at="2022-05-09T18:36:03 IST" finished-at="2022-05-09T18:36:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- day24.webpagescripts.LoginLogout -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- day24.webpagescripts.TestVtigerLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
