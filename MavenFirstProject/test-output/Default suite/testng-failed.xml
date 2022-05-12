@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="exdentreport.ExtentReportDemo">
+      <class name="day24.webpagescripts.OrangeHRMLoginScript">
         <methods>
-          <include name="startReport"/>
-          <include name="endReport"/>
-          <include name="skipTest"/>
-          <include name="testCase2"/>
-          <include name="getResult"/>
+          <include name="loginIntoOrangeHRMApp"/>
         </methods>
-      </class> <!-- exdentreport.ExtentReportDemo -->
+      </class> <!-- day24.webpagescripts.OrangeHRMLoginScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
