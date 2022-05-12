@@ -16,7 +16,8 @@ public class TestLoginPage extends SeleniumUtility{
 				//or
 		//VtigerLoginPage getVtigerLoginPage=PageFactory.initElements(driver, VtigerLoginPage.class);
 		
-		getVtigerLoginPage.loginInVtiger("admin", "Test@123");
+		getVtigerLoginPage.loginInVtiger(getPropData("username"), getPropData("password"));
 		cleanUp();
+		
 	}
 }
