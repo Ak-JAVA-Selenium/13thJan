@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="actitime.pagescripts.TestTaskFunctionality">
+      <class name="day26.javascriptsamples.JavaScriptExample1">
         <methods>
-          <include name="testCreateTask"/>
-          <include name="test_end"/>
-          <include name="test_start"/>
+          <include name="testLoginWithoutClick"/>
         </methods>
-      </class> <!-- actitime.pagescripts.TestTaskFunctionality -->
+      </class> <!-- day26.javascriptsamples.JavaScriptExample1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -30,8 +30,8 @@ public class ExtentDemo extends SeleniumUtility{
 	@Test
 	public void extentReportsDemo() throws IOException {
 		WebDriver driver=setUp("chrome", "https://www.google.com");
-		if (getCurrentTitleOfApplication().equals("Google1")) {
-			test.log(LogStatus.PASS, "Navigated to the specified URL successfully and page tile is also validated");
+		if (getCurrentTitleOfApplication().equals("Google")) {
+			test.log(LogStatus.PASS,test.addScreenCapture(screenShot(driver)), "Navigated to the specified URL successfully and page tile is also validated");
 			//System.out.println("Navigated to the specified URL successfully and page tile is also validated");
 		} else {
 			test.log(LogStatus.FAIL,test.addScreenCapture(screenShot(driver)), "Google page validation got failed");

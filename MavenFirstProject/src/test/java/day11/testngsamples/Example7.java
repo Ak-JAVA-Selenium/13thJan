@@ -16,14 +16,11 @@ import utilities.SeleniumUtility;
 public class Example7 {
 	@Test
 	public void loginLogoutInActitimeApplication() {
-
 		SeleniumUtility utility = new SeleniumUtility();
 		WebDriver driver = utility.setUp("chrome", "https://demo.actitime.com/login.do");
 		System.out.println("Before login page title: " + driver.getTitle());
-		
 		// identify the required element from the UI and perform required action 0-30
-		WebElement usernameInputField = driver.findElement(By.id("username"));
-		usernameInputField.sendKeys("admin");
+		driver.findElement(By.id("username")).sendKeys("admin");
 		// identify the required element from the UI and perform required action 0-30
 		driver.findElement(By.name("pwd")).sendKeys("manager");
 		// identify the required element from the UI and perform reqiored action

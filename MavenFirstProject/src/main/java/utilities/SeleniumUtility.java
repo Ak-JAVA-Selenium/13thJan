@@ -57,6 +57,7 @@ public class SeleniumUtility {
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
 		driver.get(appUrl);
 		wait =new WebDriverWait(driver, 60);
 		action = new Actions(driver);

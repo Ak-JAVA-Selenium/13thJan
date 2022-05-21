@@ -229,7 +229,6 @@ public class ExcelOperations {
 	@Test
 	public void getFirstCellValueFromEachRow() throws IOException{
 		
-		//getCellValue(".\\TestData\\DDT.xlsx", "Sheet1", 0);
 	}
 	
 	@Test

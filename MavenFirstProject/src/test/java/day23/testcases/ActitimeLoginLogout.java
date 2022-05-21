@@ -1,17 +1,21 @@
 package day23.testcases;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 import utilities.SeleniumUtility;
+
 
 public class ActitimeLoginLogout extends SeleniumUtility {
 
+	WebDriver driver;
 	@BeforeTest
 	public void precondition() {
-		setUp("chrome", "https://demo.actitime.com/user/submit_tt.do");
+		driver=setUp("chrome", "https://demo.actitime.com/user/submit_tt.do");
 	}
 
 	@Test

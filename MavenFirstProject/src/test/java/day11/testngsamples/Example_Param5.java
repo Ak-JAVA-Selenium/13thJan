@@ -16,6 +16,7 @@ public class Example_Param5 {
 	public void signIn() {
 		System.out.println("Hello, I am signIn from Example_Param1 class");
 		int i=10/0;
+		System.out.println("Signin method is completed");//won't get executed due to exception at line number 18
 	}
 }
 /**

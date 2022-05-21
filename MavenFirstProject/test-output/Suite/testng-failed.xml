@@ -3,13 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="day11.testngsamples.Example_Param6">
+      <class name="day11.testngsamples.Example8">
         <methods>
-          <include name="login"/>
-          <include name="checkNotification"/>
-          <include name="signIn"/>
+          <include name="loginLogoutInActitimeApplication"/>
         </methods>
-      </class> <!-- day11.testngsamples.Example_Param6 -->
+      </class> <!-- day11.testngsamples.Example8 -->
+      <class name="day11.testngsamples.Example7">
+        <methods>
+          <include name="loginLogoutInActitimeApplication"/>
+        </methods>
+      </class> <!-- day11.testngsamples.Example7 -->
+      <class name="day11.testngsamples.Example71">
+        <methods>
+          <include name="loginPageValidationInActitimeApplication"/>
+        </methods>
+      </class> <!-- day11.testngsamples.Example71 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

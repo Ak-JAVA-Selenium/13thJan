@@ -15,6 +15,7 @@ public class GoogleSearchPage extends SeleniumUtility{
 	private WebElement searchInputField;
 
 	public void searchText(String text) {
+		
 		typeInput(searchInputField, text);
 		getActiveElement().sendKeys(Keys.ENTER);
 	}

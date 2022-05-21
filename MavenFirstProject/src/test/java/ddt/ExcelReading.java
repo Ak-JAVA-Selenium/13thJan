@@ -57,7 +57,7 @@ public class ExcelReading {
 		//for particular raw
 		//XSSFRow row=sheet.getRow(1);
 				//or
-		 Row row=sheet.getRow(1);		
+		 Row row=sheet.getRow(1);	
 	}
 	@Test
 	public void getCellCount() throws IOException {
@@ -117,7 +117,7 @@ public class ExcelReading {
 		//XSSFRow row=sheet.getRow(1);
 				//or
 		 Row row=sheet.getRow(1);	
-		 row.createCell(4).setCellValue("Failed");
+		 row.createCell(4).setCellValue("Pass");
 		 //update excel file content
 		
 		 //Identify the location where you want to store your new/update data

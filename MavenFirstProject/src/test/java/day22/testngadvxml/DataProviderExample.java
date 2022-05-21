@@ -13,13 +13,13 @@ public class DataProviderExample extends SeleniumUtility {
 	 * Provider "getdata" is the function name which is passing the data Number of
 	 * columns should match the number of input parameters
 	 */
-	@Test(dataProvider = "getData")
+	@Test(dataProvider = "getData")//using dataProvider method name
 	public void setData(String username, String password) {
 		System.out.println("you have provided username as::" + username);
 		System.out.println("you have provided password as::" + password);
 	}
 
-	@Test(dataProvider = "testData")
+	@Test(dataProvider = "testData")//using dataProvider param name
 	public void testLoginOfVtiger(String browser, String username, String password) {
 		setUp(browser, "https://demo.vtiger.com/vtigercrm/index.php");
 		driver.findElement(By.id("username")).clear();

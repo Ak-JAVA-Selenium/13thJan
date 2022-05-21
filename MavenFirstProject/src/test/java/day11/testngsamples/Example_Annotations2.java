@@ -23,6 +23,11 @@ public class Example_Annotations2 {
 	public void createTask() {
 		System.out.println("Task created Successfully");
 	}
+	
+	@Test(priority=3)
+	public void deleteTask() {
+		System.out.println("Task deleted Successfully");
+	}
 }
 
 /**

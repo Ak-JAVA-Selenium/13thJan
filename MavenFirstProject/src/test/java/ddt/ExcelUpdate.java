@@ -25,10 +25,10 @@ public class ExcelUpdate extends SeleniumUtility {
 	@Test
 	public void loginIntoActitme() {
 		ExcelOperations ex = new ExcelOperations();
-		String appUrl = ex.getCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 1, 0);
-		String username = ex.getCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 1, 1);
-		String password = ex.getCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 1, 2);
-		String expectedTitle = ex.getCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 1, 3);
+		String appUrl = ex.getCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 2, 0);
+		String username = ex.getCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 2, 1);
+		String password = ex.getCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 2, 2);
+		String expectedTitle = ex.getCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 2, 3);
 		System.out.println(appUrl);
 		System.out.println(username);
 		System.out.println(password);
@@ -37,11 +37,11 @@ public class ExcelUpdate extends SeleniumUtility {
 		System.out.println("Actual title: "+getCurrentTitleOfApplication());
 		
 		if(getCurrentTitleOfApplication().equals(expectedTitle)) {
-			ex.updateCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 1, 4,"pass");
+			ex.updateCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 2, 4,"pass");
 			Assert.assertEquals(getCurrentTitleOfApplication(), expectedTitle,
 					"Either login was not successfull or title got changed");
 		}else {
-			ex.updateCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 1, 4,"failed");
+			ex.updateCellValue(".\\src\\test\\resources\\testData\\AppData.xlsx", "Sheet1", 2, 4,"failed");
 			Assert.assertEquals(getCurrentTitleOfApplication(), expectedTitle,
 					"Either login was not successfull or title got changed");
 		}
